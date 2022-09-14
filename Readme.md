@@ -142,7 +142,7 @@ To get the `rustc` command to run in `gdb`, add the `--verbose` flag to `cargo b
  * Some shells, like fish, don't define the environment variable `$MACHTYPE`.
  * Add `CFLAGS="-Wno-error=attributes -g -O2"` at the end of the configure command for building glibc (`CFLAGS="-Wno-error=attributes -Wno-error=array-parameter -Wno-error=stringop-overflow -Wno-error=array-bounds -g -O2"` for glibc 2.31, which is useful for Debian).
 
-#### Configuring rustc_codegen_gcc
+#### Configuring rustc_codegen_gcc.   
 
  * Set `TARGET_TRIPLE="m68k-unknown-linux-gnu"` in config.sh.
  * Since rustc doesn't support this architecture yet, set it back to `TARGET_TRIPLE="mips-unknown-linux-gnu"` (or another target having the same attributes). Alternatively, create a [target specification file](https://book.avr-rust.com/005.1-the-target-specification-json-file.html) (note that the `arch` specified in this file must be supported by the rust compiler).
