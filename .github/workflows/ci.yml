@@ -48,7 +48,7 @@ jobs:
           workflow: main.yml
           name: ${{ matrix.libgccjit_version.gcc }}
           path: gcc-build
-          repo: antoyo/gcc
+          repo: noamd-legit/gcc
           search_artifacts: true # Because, instead, the action only check the last job ran and that won't work since we want multiple artifacts.
 
     - name: Setup path to libgccjit
