@@ -53,6 +53,8 @@ jobs:
 
     - name: Setup path to libgccjit
       run: |
+          ls -ls gcc-build
+          cat gcc-build
           echo $(readlink -f gcc-build) > gcc_path
           # NOTE: the filename is still libgccjit.so even when the artifact name is different.
           ln gcc-build/libgccjit.so gcc-build/libgccjit.so.0
