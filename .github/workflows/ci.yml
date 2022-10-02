@@ -17,18 +17,8 @@ jobs:
       matrix:
         libgccjit_version:
           - { gcc: "libgccjit.so", extra: "" }
-          - { gcc: "libgccjit_without_int128.so", extra: "" }
-          - { gcc: "libgccjit12.so", extra: "--no-default-features" }
         commands: [
           "--mini-tests",
-          "--std-tests",
-          "--test-libcore",
-          "--extended-rand-tests",
-          "--extended-regex-example-tests",
-          "--extended-regex-tests",
-          "--test-successful-rustc --nb-parts 2 --current-part 0",
-          "--test-successful-rustc --nb-parts 2 --current-part 1",
-          "--test-failing-rustc",
         ]
 
     steps:
