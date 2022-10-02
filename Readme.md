@@ -1,4 +1,4 @@
-# WIP libgccjit codegen backend for rust
+# WIP libgccjit codegen backend for rust 
 
 [![Chat on IRC](https://img.shields.io/badge/irc.libera.chat-%23rustc__codegen__gcc-blue.svg)](https://web.libera.chat/#rustc_codegen_gcc)
 
