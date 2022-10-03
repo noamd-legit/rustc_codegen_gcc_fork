@@ -18,7 +18,7 @@ The patches in [this repository](https://github.com/antoyo/libgccjit-patches) ne
 (Those patches should work when applied on master, but in case it doesn't work, they are known to work when applied on 079c23cfe079f203d5df83fea8e92a60c7d7e878.)
 You can also use my [fork of gcc](https://github.com/antoyo/gcc) which already includes these patches.**
 
-**Put the path to your custom build of libgccjit in the file `gcc_path`.**
+**Put the path to your custom build of libgccjit in the file `gcc_path`.** 
 
 ```bash
 $ git clone https://github.com/rust-lang/rustc_codegen_gcc.git
